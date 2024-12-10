@@ -25,7 +25,7 @@ public class RockPaperScissors
     /*
      * random seeds with bounds
      */
-    private int RPSSeed = rand.nextInt(4);
+    private int RPSSeed;
     private int UnicornSeed = rand.nextInt(6);
     /*
      * player variables
@@ -100,6 +100,7 @@ public class RockPaperScissors
         }
         while(loops<rounds)//rounds control loop
         {
+            RPSSeed = rand.nextInt(4);
             opp = RPSSeed + 1;//plus one because java lists start at 0 and are boundary exclusive
             System.out.println("Enter the number of your selection");
             System.out.println("1) Rock\n2) Paper\n3) Scissors");
@@ -115,6 +116,7 @@ public class RockPaperScissors
                 if(opp == rock && player == rock)
                 {
                     System.out.println("Rock and Rock. You tied :/\n");
+                    System.out.println("Press Enter.");
                     draws++;
                     imp.nextLine();
                     flag = false;
@@ -122,6 +124,7 @@ public class RockPaperScissors
                 else if(opp == rock && player == paper)
                 {
                     System.out.println("Paper covers Rock.You Win! Good Job :)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -129,6 +132,7 @@ public class RockPaperScissors
                 else if(opp == rock && player == scissors)
                 {
                     System.out.println("Rock smashes Scissors! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -139,6 +143,7 @@ public class RockPaperScissors
                 else if(opp == paper && player == rock)
                 {
                     System.out.println("Paper covers Rock! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -146,6 +151,7 @@ public class RockPaperScissors
                 else if(opp == paper && player == paper)
                 {
                     System.out.println("Paper and Paper. You Tied :/\n");
+                    System.out.println("Press Enter.");
                     draws++;
                     imp.nextLine();
                     flag = false;
@@ -153,6 +159,7 @@ public class RockPaperScissors
                 else if(opp == paper && player == scissors)
                 {
                     System.out.println("Scissors cuts Paper! You Win! Good Job :)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -163,6 +170,7 @@ public class RockPaperScissors
                 else if(opp == scissors && player == rock)
                 {
                     System.out.println("Rock smashes Scissors! You Win! Good Job :)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -170,6 +178,7 @@ public class RockPaperScissors
                 else if(opp == scissors && player == paper)
                 {
                     System.out.println("Scissors cuts Paper! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -177,6 +186,7 @@ public class RockPaperScissors
                 else if(opp == scissors && player == scissors)
                 {
                     System.out.println("Scissors and Scissors. You Tied :/\n");
+                    System.out.println("Press Enter.");
                     draws++;
                     imp.nextLine();
                     flag = false;
@@ -284,6 +294,7 @@ public class RockPaperScissors
         }
         while(loops<rounds)
         {
+            UnicornSeed = rand.nextInt(6);
             opp = UnicornSeed + 1;
             System.out.println("Enter the number of your selection");
             System.out.println("1) Rock\n2) Paper\n3) Scissors\n4) Unicorn\n5) Donut");
@@ -298,6 +309,7 @@ public class RockPaperScissors
                 if(opp == rock && player == rock)
                 {
                     System.out.println("Rock and Rock. You tied :/\n");
+                    System.out.println("Press Enter.");
                     draws++;
                     imp.nextLine();
                     flag = false;
@@ -305,6 +317,7 @@ public class RockPaperScissors
                 else if(opp == rock && player == paper)
                 {
                     System.out.println("Paper covers Rock.You Win! Good Job :)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -312,6 +325,7 @@ public class RockPaperScissors
                 else if(opp == rock && player == scissors)
                 {
                     System.out.println("Rock smashes Scissors! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -319,6 +333,7 @@ public class RockPaperScissors
                 else if(opp == rock && player == unicorn)
                 {
                     System.out.println("Unicorn tramples Rock! You Win! Good Job:)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -326,6 +341,7 @@ public class RockPaperScissors
                 else if(opp == rock && player == donut)
                 {
                     System.out.println("Rock smashes Donut! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -336,6 +352,7 @@ public class RockPaperScissors
                 else if(opp == paper && player == rock)
                 {
                     System.out.println("Paper covers Rock! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -343,6 +360,7 @@ public class RockPaperScissors
                 else if(opp == paper && player == paper)
                 {
                     System.out.println("Paper and Paper. You Tied :/\n");
+                    System.out.println("Press Enter.");
                     draws++;
                     imp.nextLine();
                     flag = false;
@@ -350,6 +368,7 @@ public class RockPaperScissors
                 else if(opp == paper && player == scissors)
                 {
                     System.out.println("Scissors cuts Paper! You Win! Good Job :)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -357,6 +376,7 @@ public class RockPaperScissors
                 else if(opp == paper && player == unicorn)
                 {
                     System.out.println("Paper blinds Unicorn! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -364,6 +384,7 @@ public class RockPaperScissors
                 else if(opp == paper && player == donut)
                 {
                     System.out.println("Donut sits on Paper! You Win! Good Job :)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -374,6 +395,7 @@ public class RockPaperScissors
                 else if(opp == scissors && player == rock)
                 {
                     System.out.println("Rock smashes Scissors! You Win! Good Job :)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -381,6 +403,7 @@ public class RockPaperScissors
                 else if(opp == scissors && player == paper)
                 {
                     System.out.println("Scissors cuts Paper! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -388,6 +411,7 @@ public class RockPaperScissors
                 else if(opp == scissors && player == scissors)
                 {
                     System.out.println("Scissors and Scissors. You Tied :/\n");
+                    System.out.println("Press Enter.");
                     draws++;
                     imp.nextLine();
                     flag = false;
@@ -395,6 +419,7 @@ public class RockPaperScissors
                 else if(opp == scissors && player == unicorn)
                 {
                     System.out.println("Unicorn stomps Scissors! You Win! Good Job!\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -402,6 +427,7 @@ public class RockPaperScissors
                 else if(opp == scissors && player == donut)
                 {
                     System.out.println("Scissors slices Donut! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -412,6 +438,7 @@ public class RockPaperScissors
                 else if(opp == unicorn && player == rock)
                 {
                     System.out.println("Unicorn tramples Rock! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -419,6 +446,7 @@ public class RockPaperScissors
                 else if(opp == unicorn && player == paper)
                 {
                     System.out.println("Paper blinds Unicorn! You Win! Good Job :)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -426,6 +454,7 @@ public class RockPaperScissors
                 else if(opp == unicorn && player == scissors)
                 {
                     System.out.println("Unicorn stomps Scissors! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -433,6 +462,7 @@ public class RockPaperScissors
                 else if(opp == unicorn && player == unicorn)
                 {
                     System.out.println("Unicorn and Unicorn. You Tied :/\n");
+                    System.out.println("Press Enter.");
                     draws++;
                     imp.nextLine();
                     flag = false;
@@ -440,6 +470,7 @@ public class RockPaperScissors
                 else if(opp == unicorn && player == donut)
                 {
                     System.out.println("Donut chokes Unicorn. You Win! Good Job :)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -450,6 +481,7 @@ public class RockPaperScissors
                 else if(opp == donut && player == rock)
                 {
                     System.out.println("Rock smashes Donut! You Win! Good Job :)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -457,6 +489,7 @@ public class RockPaperScissors
                 else if(opp == donut && player == paper)
                 {
                     System.out.println("Donut sits on Paper! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -464,6 +497,7 @@ public class RockPaperScissors
                 else if(opp == donut && player == scissors)
                 {
                     System.out.println("Scissors slices Donut! You Win! Good Job :)\n");
+                    System.out.println("Press Enter.");
                     wins++;
                     imp.nextLine();
                     flag = false;
@@ -471,6 +505,7 @@ public class RockPaperScissors
                 else if(opp == donut && player == unicorn)
                 {
                     System.out.println("Donut chokes Unicorn! You Lose. I'm Sorry :(\n");
+                    System.out.println("Press Enter.");
                     losses++;
                     imp.nextLine();
                     flag = false;
@@ -478,6 +513,7 @@ public class RockPaperScissors
                 else if(opp == donut && player == donut)
                 {
                     System.out.println("Donut and Donut. You Tied :/\n");
+                    System.out.println("Press Enter.");
                     draws++;
                     imp.nextLine();                
                     flag = false;
