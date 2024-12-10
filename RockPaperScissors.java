@@ -187,6 +187,7 @@ public class RockPaperScissors
                     System.out.println("Enter the number of your selection");
                     System.out.println("1) Rock\n2) Paper\n3) Scissors");
                     player = imp.nextInt();
+                    imp.nextLine();
                     System.out.println("");
                 }
             }
