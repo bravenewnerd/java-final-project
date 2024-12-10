@@ -10,3 +10,4 @@ if your java version is up to date:
     now type javac *.java and hit enter. Your command line should pause for a second and then output an empty line.
     now type java Main and press enter
     You should be good to go from there
+    press CTRL+C at any time to quit. If you have to do this, please send me the output that you get afterwards.
