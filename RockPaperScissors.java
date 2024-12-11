@@ -523,6 +523,7 @@ public class RockPaperScissors
                     System.out.println("Invalid Input\n");
                     System.out.println("Enter the number of your selection");
                     System.out.println("1) Rock\n2) Paper\n3) Scissors\n4) Unicorn\n5) Donut");
+                    imp.skip("\n");
                     player = imp.nextInt();
                     imp.nextLine();
                 }

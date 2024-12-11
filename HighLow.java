@@ -62,6 +62,9 @@ public class HighLow{
             clubCards[dex] = new Card(rank, clubs);//deck of clubs
             diamondCards[dex] = new Card(rank, diamonds); //deck of diamonds
             spadeCards[dex] = new Card(rank, spades);//deck of spades
+            smallFirstCardSeed = rand.nextInt(14);
+            smallSecondCardSeed = rand.nextInt(14);
+            smallDeckSeed = rand.nextInt(5);
             dex++;
         }
     }

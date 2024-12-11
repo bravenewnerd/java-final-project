@@ -3,7 +3,6 @@ import java.util.*;
 public class HighLowMenu extends Menu{
     Scanner imp = new Scanner(System.in);
     HighLow hl = new HighLow();
-
     private String choice;
     private String easy = "easy";
     //private String normal = "normal";
@@ -77,6 +76,8 @@ public class HighLowMenu extends Menu{
         System.out.println("Spades > Diamonds > Clubs > Hearts");
         System.out.println("\nType SUITS at any time to see this again.");
         System.out.println("Hit enter to get started");
-        imp.next();
+        imp.nextLine();
+        displayHLMenu();
+
     }
 }
